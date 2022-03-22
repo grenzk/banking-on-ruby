@@ -2,7 +2,7 @@
 
 This project is created to understand the concepts of Object-oriented programming (OOP) in Ruby.
 
-### From Codecademy:
+#### From Codecademy:
 
 > In this case, we’ll be making an Account object with public methods to display balances and transfer funds, but which rely on private methods to make sure the user’s PIN (personal identification number) is correct before approving transactions. 
 > 
