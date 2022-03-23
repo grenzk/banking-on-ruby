@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# A program that display balances and transfer funds.
+# A bank that displays balances and transfers funds.
 class Account
   attr_reader :name, :balance
 
@@ -10,11 +10,7 @@ class Account
   end
 
   def display_balance(pin_number)
-    if pin == pin_number
-      puts "Balance: $#{@balance}."
-    else
-      puts pin_error
-    end
+    puts pin == pin_number ? "Balance: $#{@balance}." : pin_error
   end
 
   def withdraw(pin_number, amount)
@@ -37,4 +33,6 @@ class Account
   end
 end
 
-checking_account = Account.new("Grenzk", 500)
+checking_account = Account.new('Grenzk', 500)
+checking_account.display_balance(1234)
+checking_account.withdraw(1234, 100)
