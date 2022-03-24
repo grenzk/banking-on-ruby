@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# A bank that displays balances and transfers funds.
+# Banking
 class Account
   attr_reader :name, :balance
 
